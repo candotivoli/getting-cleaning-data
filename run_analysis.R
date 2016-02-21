@@ -8,14 +8,21 @@
 library(dplyr)
 
 runAnalysis <- function() {
-
-    # download the zip file from the URL provided in the assignment and extract 
-    dataUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-    download.file(dataUrl, "dataset.zip", "curl")
-    unzip("dataset.zip")
     
-    # zip extract will create the below sub directory with all files in a file system beneath
+    # Check if the data dir exists in local directory. If not then download and extract - otherwise continue
     dataDir <- "UCI HAR Dataset"
+    
+    if (!dir.exists(dataDir)) {
+        
+        cat("dataset not found - downloading...\n")
+        # download the zip file from the URL provided in the assignment and extract 
+        dataUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+        download.file(dataUrl, "dataset.zip", "curl")
+        unzip("dataset.zip")
+        
+    } else {
+        cat("data exists locally\n")
+    }
     
     # Set up file paths relative to root directory
     

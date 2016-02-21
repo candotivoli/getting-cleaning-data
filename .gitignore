@@ -2,3 +2,5 @@
 # ignore the downloaded dataset.zip file
 dataset.zip
 UCI HAR Dataset
+tidy_no_row_names.txt
+

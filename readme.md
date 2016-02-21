@@ -13,9 +13,9 @@ The function `runAnalysis()` in the script `run_analysis.R` will download the zi
 
 ### Getting the raw data
 
-The first part of the function downloads the zip file [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) 
+The first part of the function checks if the dataset exists in the current directory and if not it downloads the zip file and extracts. [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) 
 
-* It extracts the zip file and loads the X, Y and student test and training sets. 
+* It then loads the X, Y and student test and training sets. 
 * It merges the test and training sets for each of X, Y and student using `rbind`.
 
 ### Taking just the right columns from X
