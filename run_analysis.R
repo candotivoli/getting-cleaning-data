@@ -5,7 +5,7 @@
 #
 # main function is runAnalysis() which will return the tidy data set
 #
-
+library(dplyr)
 
 runAnalysis <- function() {
 
