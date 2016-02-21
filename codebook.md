@@ -76,4 +76,7 @@ By contrast the below variable is independent of dimension
 
 > TimeBodyAccMagMean
 
+## Summarized Data
+
+The original data set had many observations for each subject and each activity. This dataset has one observation per activity per subject. The value represents the mean value of all the observations for that subject and activity.
 

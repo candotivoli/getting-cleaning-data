@@ -4,7 +4,6 @@
 # From a style perspective I am going with the naming both variables and functions using lowerCamelCase
 #
 # main function is runAnalysis() which will return the tidy data set
-# the function testAll() will call runAnalysis and write result to file and read it back in and compare
 #
 
 
